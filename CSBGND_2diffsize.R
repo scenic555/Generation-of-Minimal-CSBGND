@@ -7,7 +7,7 @@
 # Imran Munir, Khadija Noreen, Muhammad Sajid, Mahmood Ul Hassan, Zahra Noreen
 # and Rashid Ahmed (2021). Algorithms to Construct Minimal Circular Strongly 
 # Balanced Generalized Neighbor Designs 
-# Code by Munir et al., 2021-2022 
+# Coded by Munir et al., 2021-2022 
 # Version 1.7.0  (2021-07-13)
 #################################################################################
 
