@@ -63,7 +63,7 @@ grouping2<-function(A,k,v,i,sk2){
       cs<-sum(com)
       if(cs%%v==0){
         bs1<-rbind(bs1,com)
-        A2<-A2[-com]
+        A2<-A2[-comp]
         z<-z+1
         f=f+1
       }
