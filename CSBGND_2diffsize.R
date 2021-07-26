@@ -4,7 +4,7 @@
 
 # Algorithm from paper:
 
-# Imran Munir, Khadija Noreen, Muhammad Sajid, Mahmood Ul Hassan, Zahra Noreen
+# Imran Munir, Khadija Noreen, Muhammad Sajid Rashid, Mahmood Ul Hassan, Zahra Noreen
 # and Rashid Ahmed (2021). Algorithms to Construct Minimal Circular Strongly 
 # Balanced Generalized Neighbor Designs 
 # Coded by Munir et al., 2021-2022 
@@ -128,9 +128,9 @@ delmin<-function(z){
 CSBGND_2diffsize<-function(k,i,D=1,sk2=1){
   
   if(length(k)>2 | length(k)<2){stop("length(k)=2 ")}
-  if(any(k<=3)!=0) stop("k=Block size: Each block size must be greater than 3")
+  #if(any(k<=3)!=0) stop("k=Block size: Each block size must be greater than 3")
   if(i<=0) stop("i= Must be a positive integer")
-  if(k[1]<k[2]) stop("k1>K2")
+  if(k[1]<k[2]  | k[2]<3) stop("k1>K2>2")
   
   setClass( "stat_test", representation("list"))
   

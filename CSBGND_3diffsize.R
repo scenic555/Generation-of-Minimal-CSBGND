@@ -4,7 +4,7 @@
 
 # Algorithm from paper:
 
-# Imran Munir, Khadija Noreen, Muhammad Sajid, Mahmood Ul Hassan, Zahra Noreen
+# Imran Munir, Khadija Noreen, Muhammad Sajid Rashid, Mahmood Ul Hassan, Zahra Noreen
 # and Rashid Ahmed (2021). Algorithms to Construct Minimal Circular Strongly 
 # Balanced Generalized Neighbor Designs 
 # Coded by Munir et al., 2021-2022 
@@ -159,9 +159,9 @@ grouping3<-function(A,k,v,i,sk2,sk3){
 
 CSBGND_3diffsize<-function(k,i,D,sk2,sk3){
   if(length(k)>3 | length(k)<3){stop("length(k)=3")}
-  if(any(k<=3)!=0) stop("k=Block size: Each block size must be greater than 3")
+  #if(any(k<=3)!=0) stop("k=Block size: Each block size must be greater than 3")
   if(i<=0) stop("i=must be a positive integer")
-  if(k[1]<k[2] | k[2]<k[3] |  k[1]<k[3]  ) stop("k1>K2>K3")
+  if(k[1]<k[2] | k[2]<k[3] |  k[1]<k[3] | k[3]<3  ) stop("k1>K2>K3>2")
 
   setClass( "stat_test", representation("list"))
   
